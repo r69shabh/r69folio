@@ -64,13 +64,13 @@ function App() {
             </p>
           </div>
           <div className="flex space-x-6 animate-fade-in" style={{animationDelay: '1s'}}>
-            <a href="https://github.com/rishabh" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors duration-300">
+            <a href="https://github.com/r69shabh" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors duration-300">
               <GithubIcon size={28} />
             </a>
-            <a href="https://linkedin.com/in/rishabh" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors duration-300">
+            <a href="https://linkedin.com/in/rishabh--gusain" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors duration-300">
               <LinkedinIcon size={28} />
             </a>
-            <a href="mailto:rishabh@example.com" className="hover:text-blue-500 transition-colors duration-300">
+            <a href="mailto:rishabhgusain.6@gmail.com" className="hover:text-blue-500 transition-colors duration-300">
               <MailIcon size={28} />
             </a>
           </div>
