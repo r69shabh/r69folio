@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { SunIcon, MoonIcon, GithubIcon, LinkedinIcon, MailIcon } from 'lucide-react';
 
 const projects = [
-  { name: "Project Alpha", year: 2023, tech: "React, Node.js", client: "TechCorp" },
-  { name: "Beta App", year: 2022, tech: "Vue.js, Express", client: "StartupX" },
-  { name: "Gamma Platform", year: 2021, tech: "Angular, Django", client: "EnterpriseY" },
+  { name: "AI Drawing App", year: 2024, tech: "React, Node.js, Python", client: "NST" },
+  { name: "_search", year: 2024, tech: "HTML, CSS", client: "Personal" },
+  { name: "Cleartrip Clone", year: 2024, tech: "React, Node.js", client: "NST" },
 ];
 
 const awards = [
@@ -57,7 +57,7 @@ function App() {
               UX, AI, and creating meaningful products.
             </p>
             <p className="animate-slide-up" style={{animationDelay: '700ms'}}>
-              Currently studying Computer Science and working on exciting
+            Currently studying Computer Science and working on exciting
             </p>
             <p className="animate-slide-up" style={{animationDelay: '800ms'}}>
               features in <span className="text-blue-500 font-normal">life</span>.
