@@ -57,10 +57,10 @@ function App() {
               UX, AI, and creating meaningful products.
             </p>
             <p className="animate-slide-up" style={{animationDelay: '700ms'}}>
-            Currently studying Computer Science and working on exciting
+            Currently studying Computer Science
             </p>
             <p className="animate-slide-up" style={{animationDelay: '800ms'}}>
-              features in <span className="text-blue-500 font-normal">life</span>.
+              and working on <span className="text-blue-500 font-normal">life</span>.
             </p>
           </div>
           <div className="flex space-x-6 animate-fade-in" style={{animationDelay: '1s'}}>
