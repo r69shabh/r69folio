@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { SunIcon, MoonIcon, GithubIcon, LinkedinIcon, MailIcon } from 'lucide-react';
 
 const projects = [
-  { name: "AI Drawing App", year: 2024, tech: "React, Node.js, Python", client: "NST" },
-  { name: "_search", year: 2024, tech: "HTML, CSS", client: "Personal" },
-  { name: "Cleartrip Clone", year: 2024, tech: "React, Node.js", client: "NST" },
+  { name: "AI Drawing App", year: 2024, tech: "React, Node.js, Python", client: "NST" , link: "https://github.com/r69shabh/SketchdetectAI-FE"},
+  { name: "_search", year: 2024, tech: "HTML, CSS", client: "Personal" , link:"https://github.com/r69shabh/_earch"},
+  { name: "Cleartrip Clone", year: 2024, tech: "React, Node.js", client: "NST" , link:"https://github.com/r69shabh/ClearTrip-Clone"},
 ];
 
 const awards = [
@@ -79,19 +79,19 @@ function App() {
         </header>
 
         <main className="space-y-16">
-          <section className="opacity-0 animate-fade-in" style={{animationDelay: '1.2s'}}>
+            <section className="opacity-0 animate-fade-in" style={{animationDelay: '1.2s'}}>
             <h3 className="text-2xl font-semibold mb-6 tracking-wide">FEATURED PROJECTS</h3>
             <div className="space-y-6">
               {projects.map((project, index) => (
-                <div key={index} className="group">
-                  <h4 className="text-xl font-medium text-blue-500 group-hover:text-blue-400 transition-colors duration-300">
-                    {project.name} <span className="text-gray-400 dark:text-gray-500">◦ {project.year}</span>
-                  </h4>
-                  <p className="text-gray-600 dark:text-gray-400">{project.tech} ◦ {project.client}</p>
-                </div>
+              <div key={index} className="group">
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-xl font-medium text-blue-500 group-hover:text-blue-400 transition-colors duration-300">
+                {project.name} <span className="text-gray-400 dark:text-gray-500">◦ {project.year}</span>
+                </a>
+                <p className="text-gray-600 dark:text-gray-400">{project.tech} ◦ {project.client}</p>
+              </div>
               ))}
             </div>
-          </section>
+            </section>
 
           <section className="opacity-0 animate-fade-in" style={{animationDelay: '1.4s'}}>
             <h3 className="text-2xl font-semibold mb-6 tracking-wide">AWARDS AND RECOGNITIONS</h3>
