@@ -7,11 +7,11 @@ body {
 }
 
 .dark {
-  @apply bg-black text-white;
+  @apply bg-gray-900 text-white;
 }
 
 .light {
-  @apply bg-white text-black;
+  @apply bg-gray-50 text-gray-900;
 }
 
 @keyframes fadeIn {
@@ -20,8 +20,14 @@ body {
 }
 
 @keyframes slideUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { 
+    opacity: 0; 
+    transform: translateY(20px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-fade-in {
@@ -31,4 +37,32 @@ body {
 .animate-slide-up {
   opacity: 0;
   animation: slideUp 0.8s ease-out forwards;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 dark:bg-gray-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500 dark:bg-gray-500;
 }
